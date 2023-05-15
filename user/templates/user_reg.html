@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundoo Notes</title>
+</head>
+<body>
+<h1>Welcome to Registration Page</h1>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>
+                First Name:
+            </td>
+            <td>
+                <input type="text" id="first_name" name="first_name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:
+            </td>
+            <td>
+                <input type="text" id="last_name" name="last_name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Username:
+            </td>
+            <td>
+                <input type="text" id="username" name="username" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="email" id="email" name="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" id="password" name="password" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td>
+                <input type="number" id="phone" name="phone" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Register</button>
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
